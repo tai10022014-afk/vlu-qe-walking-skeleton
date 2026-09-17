@@ -6,4 +6,6 @@ function login(user, pass) {
     return false;
 }
 
-module.exports = { login };
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = { login };
+}
